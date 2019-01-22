@@ -12,11 +12,11 @@ $ composer require germania-kg/tracking
 
 
 
-## Development
+## Development + testing
 
 ```bash
 $ git clone https://github.com/GermaniaKG/Tracking.git tracking
-$ cd trackinginfo
+$ cd tracking
 $ composer install
 
 # Run PhpUnit
