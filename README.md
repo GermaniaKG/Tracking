@@ -3,8 +3,8 @@
 **Classes, interfaces and traits for dealing with shipment tracking information**
 
 ![](https://img.shields.io/packagist/php-v/germania-kg/tracking.svg)
-[![Build Status](https://travis-ci.org/GermaniaKG/Tracking.svg?branch=master)](https://travis-ci.org/GermaniaKG/Tracking)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/?branch=master)
+![](https://img.shields.io/travis/GermaniaKG/Tracking.svg)
+![](https://img.shields.io/scrutinizer/g/germaniakg/tracking.svg)
 ![](https://img.shields.io/scrutinizer/coverage/g/germaniakg/tracking.svg)
 
 ## Installation
