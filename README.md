@@ -1,4 +1,4 @@
-# Germania · Tracking
+# Germania KG · Tracking
 
 **Classes, interfaces and traits for dealing with shipment tracking information**
 
