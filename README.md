@@ -14,6 +14,49 @@
 $ composer require germania-kg/tracking
 ```
 
+## Usage
+
+### TrackingInfoInterface
+
+The *TrackingInfoInterface* provides two methods, **getTrackingID** and **getTrackingLink**. 
+
+### TrackingInfo class
+
+The *TrackingInfo* class extends **TrackingInfoAbstract** which implements *TrackingInfoInterface*. It additionally provides setter methods **setTrackingID** and **setTrackingLink:**
+
+```php
+<?php
+use Germania\Tracking\TrackingInfo;
+
+$ti = new TrackingInfo;
+$ti->setTrackingID( "123456" );
+$ti->setTrackingLink( "https://parcels.test.com?id=123456" );
+
+echo $ti->getTrackingID();   // "123456"
+echo $ti->getTrackingLink(); // "https://parcels.test.com?id=123456"
+```
+
+*TrackingInfo* also implements **JsonSerializable:**
+
+```php
+$ti = new TrackingInfo;
+$ti->setTrackingID( "123456" );
+$ti->setTrackingLink( "https://parcels.test.com?id=123456" );
+
+// As array:
+$array = $ti->jsonSerialize();
+echo $array['id'];   // "123456"
+echo $array['href']; // "https://parcels.test.com?id=123456"
+
+// StdClass:
+$encoded = json_encode( $ti );
+$decoded = json_decode( $encoded );
+
+echo $decoded->id;   // "123456"
+echo $decoded->href; // "https://parcels.test.com?id=123456"
+
+```
+
 
 
 ## Development + testing
