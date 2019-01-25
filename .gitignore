@@ -41,19 +41,10 @@ Icon
 
 # Project files      #
 ######################
-config.json
-var/*
-logs/*
-
-# Workflow files     #
-######################
 _schrott
 vendor
 node_modules
 var/*
-logs/*
-tests/build
-build
 phpunit.xml
 
 
