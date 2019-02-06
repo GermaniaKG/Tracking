@@ -2,17 +2,20 @@
 
 **Classes, interfaces and traits for dealing with shipment tracking information**
 
+[![Packagist](https://img.shields.io/packagist/v/germania-kg/tracking.svg?style=flat)](https://packagist.org/packages/germania-kg/tracking)
 [![PHP version](https://img.shields.io/packagist/php-v/germania-kg/tracking.svg)](https://packagist.org/packages/germania-kg/tracking)
 [![Build Status](https://img.shields.io/travis/GermaniaKG/Tracking.svg?label=Travis%20CI)](https://travis-ci.org/GermaniaKG/Tracking)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/build-status/master)
 
-## Installation
+
+## Installation with Composer
 
 ```bash
 $ composer require germania-kg/tracking
 ```
+
 
 ## Usage
 
@@ -59,14 +62,21 @@ echo $decoded->href; // "https://parcels.test.com?id=123456"
 
 
 
-## Development + testing
+## Development
 
 ```bash
-$ git clone https://github.com/GermaniaKG/Tracking.git tracking
-$ cd tracking
+$ git clone https://github.com/GermaniaKG/Tracking.git
+$ cd Tracking
 $ composer install
+```
 
-# Run PhpUnit
+## Unit tests
+
+Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. Run [PhpUnit](https://phpunit.de/) test or composer scripts like this:
+
+```bash
 $ composer test
+# or
+$ vendor/bin/phpunit
 ```
 
