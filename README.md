@@ -16,14 +16,37 @@
 $ composer require germania-kg/tracking
 ```
 
-
 ## Usage
 
-### TrackingInfoInterface
+### Interfaces and Traits
+
+#### TrackingInfoInterface
 
 The *TrackingInfoInterface* provides two methods, **getTrackingID** and **getTrackingLink**. 
 
-### TrackingInfo class
+
+
+#### TrackingInfoProviderInterface
+
+The *TrackingInfoProviderInterface* provides a **getTrackingInfo** method which returns *TrackingInfoInterface* or *null*.
+
+#### TrackingInfoProviderTrait
+
+The *TrackingInfoProviderTrait* introduces a public property **$tracking_info** and a public method **getTrackingInfo** which fulfills the *TrackingInfoProviderInterface*.
+
+
+
+#### TrackingInfoAwareInterface
+
+The *TrackingInfoAwareInterface* extends *TrackingInfoProviderInterface* and provides a **setTrackingInfo** method which accepts *TrackingInfoInterface*.
+
+#### TrackingInfoProviderTrait
+
+The *TrackingInfoProviderTrait* uses *TrackingInfoProviderTrait* and additionally provides setTrackingInfo a public **setTrackingInfo** method which fulfills the *TrackingInfoAwareInterface*.
+
+### Classes
+
+#### TrackingInfo class
 
 The *TrackingInfo* class extends **TrackingInfoAbstract** which implements *TrackingInfoInterface*. It additionally provides setter methods **setTrackingID** and **setTrackingLink:**
 
