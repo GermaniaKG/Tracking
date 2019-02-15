@@ -1,38 +1,39 @@
 {
-	"name": "germania-kg/tracking",
+    "name": "germania-kg/tracking",
 
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Carsten Witt",
-			"email": "carstenwitt@germania-kg.de",
-			"role": "Developer"
-		}
-	],
-	"autoload": {
-		"psr-4": {
-			"Germania\\Tracking\\": "src/"
-		}
-	},
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carsten Witt",
+            "email": "carstenwitt@germania-kg.de",
+            "role": "Developer"
+        }
+    ],
 
-  "autoload-dev": {
-      "psr-4": { "tests\\": "tests/src" }
-  },
+    "autoload": {
+        "psr-4": {
+            "Germania\\Tracking\\": "src/"
+        }
+    },
 
-	"require": {
-		"php": "^7.0"
-	},
+    "autoload-dev": {
+        "psr-4": { "tests\\": "tests/src" }
+    },
 
-	"require-dev": {
-		"php-coveralls/php-coveralls": "^2.0",
-		"phpunit/phpunit": "^5.7|^6.0|^7.0"
-	},
+    "require": {
+        "php": "^7.0"
+    },
 
-  "scripts": {
- 		"phpunit": "phpunit",
+    "require-dev": {
+        "php-coveralls/php-coveralls": "^2.0",
+        "phpunit/phpunit": "^5.7|^6.0|^7.0"
+    },
 
-    "test": [
-        "@phpunit"
-		]
-	}
+    "scripts": {
+        "phpunit": "phpunit",
+
+        "test": [
+            "@phpunit"
+        ]
+    }
 }
