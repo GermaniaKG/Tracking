@@ -2,7 +2,7 @@
 namespace Germania\Tracking;
 
 
-class TrackingInfo extends TrackingInfoAbstract implements TrackingInfoInterface, \JsonSerializable
+class TrackingInfo extends TrackingInfoAbstract implements TrackingInfoInterface, TrackingInfoProviderInterface, \JsonSerializable
 {
 
     /**
@@ -25,6 +25,16 @@ class TrackingInfo extends TrackingInfoAbstract implements TrackingInfoInterface
     public function setTrackingLink ( string $tracking_link )
     {
         $this->tracking_link = $tracking_link;
+        return $this;
+    }
+
+
+    /**
+     * Returns self.
+     * @inheritDoc
+     */
+    public function getTrackingInfo()
+    {
         return $this;
     }
 
