@@ -2,6 +2,8 @@
 namespace tests;
 
 use Germania\Tracking\TrackingInfo;
+use Germania\Tracking\TrackingInfoProviderInterface;
+use Germania\Tracking\TrackingInfoInterface;
 
 
 use Prophecy\Argument;
@@ -40,6 +42,21 @@ class TrackingInfoTest extends \PHPUnit\Framework\TestCase
 
         $fluent = $sut->setTrackingLink( $link );
         $this->assertInstanceOf( TrackingInfo::class, $fluent );
+    }
+
+
+    /**
+     * @dataProvider provideTrackingInfoData
+     */
+    public function testTrackingInfoInterface( $id, $link)
+    {
+        $sut = new TrackingInfo;
+
+        $this->assertInstanceOf( TrackingInfoProviderInterface::class, $sut );
+
+        $ti = $sut->getTrackingInfo();
+        $this->assertEquals( $ti, $sut);
+        $this->assertInstanceOf( TrackingInfoInterface::class, $ti);
     }
 
 
