@@ -22,7 +22,7 @@ $ composer require germania-kg/tracking
 
 #### TrackingInfoInterface
 
-The *TrackingInfoInterface* provides two methods, **getTrackingID** and **getTrackingLink**. 
+The *TrackingInfoInterface* provides two methods, **getTrackingID** and **getTrackingLink**.
 
 
 
@@ -62,7 +62,7 @@ echo $ti->getTrackingID();   // "123456"
 echo $ti->getTrackingLink(); // "https://parcels.test.com?id=123456"
 ```
 
-*TrackingInfo* also implements **JsonSerializable:**
+*TrackingInfo* fulfills also **TrackingInfoProviderInterface**, since its *getTrackingInfo* method returns itself. The class also implements **JsonSerializable:**
 
 ```php
 $ti = new TrackingInfo;
@@ -83,7 +83,7 @@ echo $decoded->href; // "https://parcels.test.com?id=123456"
 
 ```
 
-
+*
 
 ## Development
 
