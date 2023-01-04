@@ -2,7 +2,6 @@
 
 **Classes, interfaces and traits for dealing with shipment tracking information**
 
-https://github.com/GermaniaKG/Tracking
 
 [![Packagist](https://img.shields.io/packagist/v/germania-kg/tracking.svg?style=flat)](https://packagist.org/packages/germania-kg/tracking)
 [![PHP version](https://img.shields.io/packagist/php-v/germania-kg/tracking.svg)](https://packagist.org/packages/germania-kg/tracking)
