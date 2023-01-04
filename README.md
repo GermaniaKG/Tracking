@@ -2,12 +2,11 @@
 
 **Classes, interfaces and traits for dealing with shipment tracking information**
 
+https://github.com/GermaniaKG/Tracking
+
 [![Packagist](https://img.shields.io/packagist/v/germania-kg/tracking.svg?style=flat)](https://packagist.org/packages/germania-kg/tracking)
 [![PHP version](https://img.shields.io/packagist/php-v/germania-kg/tracking.svg)](https://packagist.org/packages/germania-kg/tracking)
-[![Build Status](https://img.shields.io/travis/GermaniaKG/Tracking.svg?label=Travis%20CI)](https://travis-ci.org/GermaniaKG/Tracking)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Tracking/build-status/master)
+[![Tests](https://github.com/GermaniaKG/Tracking/actions/workflows/tests.yml/badge.svg)](https://github.com/GermaniaKG/Tracking/actions/workflows/tests.yml)
 
 
 ## Installation with Composer
