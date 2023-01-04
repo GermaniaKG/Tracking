@@ -45,6 +45,7 @@ class TrackingInfo extends TrackingInfoAbstract implements TrackingInfoInterface
      * @inheritDoc
      * @return array
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return array(
